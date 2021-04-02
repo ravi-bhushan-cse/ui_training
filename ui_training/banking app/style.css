@@ -1,0 +1,42 @@
+.top1{
+    font-size: xx-large;
+    font-weight: 400;
+    text-align: center;
+    
+    background-color: crimson;
+    color: wheat;
+    width: 800px;
+    transform: translateX(300px);
+}
+.Firstline{
+   
+    display: inline;
+    transform: translateX(300px);
+    padding-left: 5px;
+    
+
+}
+.cent{
+    border: solid grey 2px;
+    width: 800px;
+    transform: translateX(300px);
+
+
+}
+#login{
+    padding-left: 50px;
+}
+#card{
+
+    width: 300px;
+    height: 300px;
+    transform: translate(30px,30px);
+}
+#card2{
+    transform: translate(30px,30px);
+    
+
+}
+#bod{
+    background-color:whitesmoke;
+}

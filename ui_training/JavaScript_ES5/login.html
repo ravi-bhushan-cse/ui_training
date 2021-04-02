@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+            
+            var user= document.getElementById("user").value
+            var pass=document.getElementById("pass").value
+            if (user.length==0)
+            {
+           document.getElementById("e1").innerHTML="user name required"
+           document.getElementById("e2").innerHTML=""
+            return false;
+            }
+            else if(pass.length==0)
+            {
+                document.getElementById("e1").innerHTML=""
+                document.getElementById("e2").innerHTML="password required"
+                return false
+            }
+            else{
+
+            return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>LOgin page</h2>
+    <form action="home.html"  onsubmit="return validate()">
+        <label >Username</label>        
+        <input type="text" name="user" id="user">
+        <span id="e1" style="color: red;"></span><br>
+        <label for="">Password</label>
+        <input type="password" id="pass">
+        
+        <span id="e2" style="color: red;"></span><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+    </form>
+</div>
+
+<div>
+    <h3>html5 validation</h3>
+    <form action="home.html">
+        <label for="">Username</label>
+        <input type="text"  name="user1" required /><br>
+        <label for="">Password</label>
+        <input type="text"  name="user1" required /><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</div>
+    
+</body>
+</html>

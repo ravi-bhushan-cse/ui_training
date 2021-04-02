@@ -1,0 +1,20 @@
+.parent{
+    border: red 2px solid;
+}
+.box{
+    border:steelblue 2px solid;
+    width: 100px;
+    height: 100px;
+   
+}
+#one{
+    margin-left: 30px;
+    position: relative;
+    
+    display: inline-block;
+}
+#two{
+    position: relative;
+    display: inline-block;
+    
+}

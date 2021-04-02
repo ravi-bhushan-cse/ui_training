@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function add()
+    {
+        var a
+        var b
+        var c
+       a=eval(document.getElementById("tux1").value)
+       b=eval(document.getElementById("tux2").value)
+       c=a+b
+       document.getElementById("tux1").value=""
+       document.getElementById("tux2").value=""
+       
+       document.getElementById("tux3").value=c
+        
+    }
+    function sub()
+    {
+        var a
+        var b
+        var c
+       a=eval(document.getElementById("tux1").value)
+       b=eval(document.getElementById("tux2").value)
+       c=a-b
+       document.getElementById("tux1").value=""
+       document.getElementById("tux2").value=""
+       
+       document.getElementById("tux3").value=c
+        
+    }
+    
+
+</script>
+</head>
+<body>
+    <h3>CALCULATOR</h3>
+    First number: <input type="text" name="user" id="tux1"><br>
+    2nd number:<input type="text" name="user" id="tux2"><br>
+   
+    <input type="button" value="add" onclick="add()">
+    <input type="button" value="SUB" onclick="sub()">
+    Result:<input type="text" name="user" id="tux3">
+    
+
+    
+    
+</body>
+</html>

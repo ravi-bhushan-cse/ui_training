@@ -1,0 +1,32 @@
+/*div{
+border: solid rebeccapurple 3px;
+width: 350px;
+display: inline-block;
+}
+#one{
+    position: relative;
+    height: 250px;
+    margin-top: 20px;
+    
+ 
+    
+}
+#two{
+    position: absolute;
+    transform: rotate(20deg);
+}*/
+div{
+    border: red solid 5px;
+    height:1000px;
+    width: 500px;
+    color:blue;
+    animation-name: myanim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+img{
+
+}
+@keyframes myanim{
+  
+}
