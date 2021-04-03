@@ -30,13 +30,37 @@
 
     width: 300px;
     height: 300px;
-    transform: translate(30px,30px);
+    transform: translate(10px,30px);
 }
 #card2{
-    transform: translate(30px,30px);
+    width: 300px;
+    height: 300px;
+    transform: translate(50px,30px);
     
 
 }
 #bod{
     background-color:whitesmoke;
+}
+#card3{
+
+    width: 300px;
+    height: 300px;
+    transform: translate(50px,30px);
+    border: black solid 3px;
+}
+#card4{
+    transform: translate(30px,30px);
+}
+.Secondline{
+   
+    float: left;
+    transform: translateX(30px);
+    padding-left: 5px;
+    
+
+}
+.text2{
+    transform: translateX(30px);
+
 }

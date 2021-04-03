@@ -7,8 +7,28 @@
     <title >XYZ banking</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script>
+        var i=0
+        function styleeff()
+    {
+        if(i%2==0)
+        {
+            document.getElementById("card").src="creditcards.jpg"
+            document.getElementById("card").style.width="500px"
+        }
+        else
+        {
+            document.getElementById("card").src="xyz-credit-card.jpg"
+            document.getElementById("card").style.width="500px"
+        }
+        i++;
+    }
+    function info(){
+        setInterval("styleeff()",1000)
+    }
+    </script>
 </head>
-<body id="bod">
+<body onload="info()">
     
     <div class="top1 ">
         
@@ -39,21 +59,28 @@
        <a href="Login.html"> <button type="button" class="btn btn-outline-primary">LOGIN</button> </a></div>
 </div>
 
-<div>
+
+<div class="Secondline">
     <a href="https://www.axisbank.com/retail/cards/credit-card?cta=productgoal-target-segCards-CreditCards-First">
-    <img src="creditcards.jpg" alt="creditcard" id="card">
+    <img  id="card"> <br><br><br>
+    <u class="text2"> Creditcard</u>
     </a>
 </div>
-<div id="card2">
-    <a href="https://www.axisbank.com/retail/cards/credit-card?cta=productgoal-target-segCards-CreditCards-First"> Creditcard</a>
-</div>
-<div>
-    <a href="">
-    <img src="personalloan.jpg" alt="" id="">
+
+
+<div class="Secondline">
+    
+    <a href="https://www.axisbank.com/retail/loans/personal-loan/features-benefits?cta=productgoal-target-segCards-PersonalLoan-Second">
+    <img src="personalloan.jpg" alt="" id="card2"><br><br><br>
+    <u class="text2">Personal loan</u>
     </a>
 </div>
-<div id="card4">
-    <a href=""> </a>
+<div class="Secondline" >
+    <a href="https://www.axisbank.com/retail/loans/car-loan?cta=productgoal-target-segCards-CarLoan-Third">
+    <img src="carloan.jpg" alt="creditcard" id="card3"> <br><br><br>
+    
+    <u class="text2"  > CarLoan</u>
+    </a>
 </div>
 
 

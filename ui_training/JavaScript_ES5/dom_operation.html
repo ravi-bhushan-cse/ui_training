@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addData()
+        {
+            var pnode =document.createElement("p");
+            var textnode=document.createTextNode("welcome to dom operation")
+            pnode.appendChild(textnode)
+
+            var divmain=document.getElementById("m1");
+            divmain.appendChild(pnode)
+
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="addData" onclick="addData()"/>
+    <div id="m1"></div>
+    
+</body>
+</html>

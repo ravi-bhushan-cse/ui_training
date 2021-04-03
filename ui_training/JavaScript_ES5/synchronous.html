@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dis()
+        {
+            //document.write("2nd statement")
+            document.getElementById("msg").innerHTML="2ns ststement"
+        }
+        var i=0
+        function dis1(){
+            
+            document.getElementById("msg2").innerHTML="4th ststement"+i
+            i++;
+        }
+        document.write("1st stat")
+        setTimeout("dis()",2000);
+        setInterval("dis1()",1000)
+        document.write("3rd statement")
+    </script>
+</head>
+<body>
+    <div id="msg"></div>
+
+<div id="msg2"></div>
+    
+</body>
+</html>

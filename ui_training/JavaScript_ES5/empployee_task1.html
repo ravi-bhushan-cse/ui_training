@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classinfo{background-color: aqua;
+        font-size: large;
+
+        }
+    </style>
+    <script>
+        function applystyle()
+        {
+            var divmain=document.getElementById("m1");
+            divmain.setAttribute("class","classinfo");
+        }
+        function addData()
+        {
+            var id
+            var name
+            var salary 
+            var designation
+            
+            
+            id=document.getElementById("tux1").value
+            name=document.getElementById("tux2").value
+            salary=eval(document.getElementById("tux3").value)
+            designation=document.getElementById("tux4").value
+       
+            var pnode =document.createElement("p");
+
+            var textnode=document.createTextNode(id)
+            pnode.appendChild(textnode)
+            var br=document.createElement('br')
+            pnode.appendChild(br)
+            
+            textnode=document.createTextNode(name)
+            pnode.appendChild(textnode)
+            br=document.createElement('br')
+            pnode.appendChild(br)
+            
+            if(designation=="manager")
+            {
+                salary=5000+salary
+            }else if(designation=="programmer")
+            {
+                salary=3000+salary 
+            }
+            else
+            {
+                salary=1500+salary
+            }
+            textnode=document.createTextNode(salary)
+            pnode.setAttribute("style","color:red")
+            pnode.appendChild(textnode)
+            br=document.createElement('br')
+            pnode.appendChild(br)
+            
+            textnode=document.createTextNode(designation)
+            pnode.appendChild(textnode)
+            br=document.createElement('br')
+            pnode.appendChild(br)
+            
+
+            var divmain=document.getElementById("m1");
+            divmain.appendChild(pnode)
+
+        }
+    </script>
+</head>
+<body >
+    <h3>Add Employee Details</h3>
+    ID :<input type="text" name="user" id="tux1"><br>
+    NAME :<input type="text" name="user" id="tux2"><br>
+    SALARY: <input type="text" name="user" id="tux3"><br>
+    DESIGNATION: <input type="text" name="user" id="tux4"><br>
+    <input type="button" value="Store" onclick="addData()"><br>
+    <input type="button" value="appply css effect" onclick="applystyle()"><br>
+    <div id="m1">
+        
+    </div>
+    
+</body>
+</html>
