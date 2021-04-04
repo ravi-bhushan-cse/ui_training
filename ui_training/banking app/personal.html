@@ -7,6 +7,7 @@
     <title>Personal Banking</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 
@@ -28,15 +29,19 @@
             <div class="Firstline">
                <a href="support.html"> Support</a></div>
             <div class="Firstline">
-               <label>Language</label><Select name="Language">
-                   <option value="English">English</option>
-                   <option value="hindi">hindi</option>
-                   <option value="bengali">bengali</option>
-                   <option value="odia">odia</option>
-               </Select>
+               
+              <div class="dropdown">
+                <button class="dropbtn">English</button>
+                <div class="dropdown-content">
+                  <a href="#">hindi</a>
+                  <a href="#">bengali</a>
+                  <a href="#">odia</a>
+                </div>
+              </div>
             </div>
             <div class="Firstline " id="login">
                <a href="Login.html"> <button type="button" class="btn btn-outline-primary">LOGIN</button> </a></div>
-        </div>
+       
+
 </body>
 </html>

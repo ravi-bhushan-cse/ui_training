@@ -20,6 +20,8 @@
     border: solid grey 2px;
     width: 800px;
     transform: translateX(300px);
+    border-radius: 10px;
+    
 
 
 }
@@ -74,4 +76,59 @@
     transform: translateY(50px);
     
  padding-left: 90px;
+}
+#card4{
+
+    width: 300px;
+    height: 300px;
+    transform: translate(10px,30px);
+}
+#card5{
+    width: 300px;
+    height: 300px;
+    transform: translate(50px,30px);
+    
+
+}
+#card6{
+
+    width: 300px;
+    height: 300px;
+    transform: translate(50px,30px);
+    border: gray solid 3px;
+}
+#card7{
+
+    width: 300px;
+    height: 300px;
+    transform: translate(80px,30px);
+    border: gray solid 3px;
+}
+#text4{
+    transform: translateX(50px);
+    padding-left: 20px;
+
+}
+#text5{
+    transform: translateY(50px);
+    
+ padding-left: 50px;
+}
+#text6{
+    transform: translateY(50px);
+    
+ padding-left: 90px;
+}
+#text7{
+    transform: translateY(50px);
+    
+ padding-left: 90px;
+}
+.thirdline{
+   
+    float: left;
+    transform: translateX(30px);
+    padding-left: 5px;
+    
+
 }
