@@ -46,8 +46,8 @@
 
     width: 300px;
     height: 300px;
-    transform: translate(50px,30px);
-    border: black solid 3px;
+    transform: translate(80px,30px);
+    border: gray solid 3px;
 }
 #card4{
     transform: translate(30px,30px);
@@ -60,7 +60,18 @@
     
 
 }
-.text2{
-    transform: translateX(30px);
+#text1{
+    transform: translateX(50px);
+    padding-left: 20px;
 
+}
+#text2{
+    transform: translateY(50px);
+    
+ padding-left: 50px;
+}
+#text3{
+    transform: translateY(50px);
+    
+ padding-left: 90px;
 }
