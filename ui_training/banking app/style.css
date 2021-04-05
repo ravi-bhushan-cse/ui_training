@@ -7,6 +7,8 @@
     color: wheat;
     width: 800px;
     transform: translateX(300px);
+    border:black solid 3px;
+    border-radius: 5px;
 }
 .Firstline{
    
@@ -117,7 +119,7 @@
 #text6{
     transform: translateY(50px);
     
- padding-left: 90px;
+ padding-left: 80px;
 }
 #text7{
     transform: translateY(50px);
